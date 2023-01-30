@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            HTML-Forms
+        </title>
+        <style>
+            body{
+                background-color:lightblue;
+            }
+            #register-form{
+                width: 350px;
+                color: rgb(255, 255, 255);
+                background-color: #820000;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 24px;
+                box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+            }
+            .input-labels{
+                margin: 0;
+                margin-top: 13px;
+                margin-bottom: 4px;
+                box-shadow: 3px 3px 6px rgb(255, 214, 176);
+                
+            }
+            .input-items{
+                
+                width: 100%;
+                box-shadow: 3px 3px 6px rgb(255, 214, 176);
+            }
+            #checkbox-terms{
+                margin-top: 10px;
+                margin-bottom: 18px;
+            }
+        </style>
+    </head>
+    <body>
+          <h1 style="text-align: center; color: rgb(44, 12, 21);">Signup</h1>
+          <form id="register-form">
+            <div>
+               <p class="input-labels">Full Name: </p> 
+                <input class="input-items" type="text" name="full-name" placeholder="Full Name" required>
+            </div>
+
+            <div>
+                <p class="input-labels"> Email: </p> 
+                <input class="input-items"  type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div>
+                <p class="input-labels"> Password:</p> 
+                <input class="input-items"  type="password" name="password" placeholder="Password" required maxlength="8">
+            </div>
+
+             <div>
+                <p class="input-labels">Confirm Password:</p> 
+                <input class="input-items"  type="password" name="confirm-password" placeholder="Confirm Password" required maxlength="8">
+             </div>
+
+             <div>
+                <p class="input-labels">Gender: </p> 
+                <input type="radio" name="gender" value="male">Male</input>
+                <input type="radio" name="gender" value="female">Female</input>
+                <input type="radio" name="gender" value="others">Others</input>
+            </div>
+
+            <div>
+                <p class="input-labels">Security Question: </p> 
+                <select name="security-question" >
+                    <option value="first-pet-name">What was your first pet name?</option>
+                    <option value="first-country-visit">Where was your first country visit?</option>
+                    <option value="first-job">What was your first job?</option>
+                    <option value="nick-name">What is your nick name?</option>
+                </select>
+            </div>
+             
+            <div>
+                <textarea class="input-items"  cols="28" rows="5"></textarea>
+            </div>
+
+            <div>
+                <input id="checkbox-terms"  type="checkbox" name="agree-terms" value="accept-terms-conditions">
+                I agree to accept the terms and conditions </input>
+            </div>
+
+            <div>
+                <input  type="submit " value="Register" >
+                <input  type="reset" value="Reset" >
+           </div>
+
+                
+                                    <!--html form tag wit pre defined options
+                                    <form action="">
+                                        <input list="browsers">
+                                        <datalist id="browsers">
+                                            <option value="Chrome">
+                                            <option value="Safari">
+                                            <option value="Edge">
+                                            <option value="Brave">
+                                            <option value="Opera">
+                                        </datalist>
+                                    </form>
+                                    --> 
+          </form>
+</html>  
